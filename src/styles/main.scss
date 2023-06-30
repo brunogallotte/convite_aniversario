@@ -1,0 +1,16 @@
+@use 'header';
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+    color: #fff;
+    list-style: none;
+}
+
+body {
+    background-color: #131313;
+    margin-top: 18vh;
+}

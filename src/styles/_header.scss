@@ -1,0 +1,42 @@
+.header {
+    background: linear-gradient(to right, #202020 50%, #303030 50%);
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__brand {
+            font-size: 14px;
+
+        }
+
+        &__nav {
+            
+            &__box {
+                display: flex;
+
+                &__item {
+                    margin-right: 24px;
+                    
+                    &__link {
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #fff;
+
+                        &:hover {
+                            border-bottom: 1px solid #ccc;
+                            transition: border-bottom .8s ease;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
