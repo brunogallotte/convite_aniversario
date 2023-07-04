@@ -6,6 +6,10 @@
     align-items: center;
     margin: 0 auto;
     background: linear-gradient(to right, #202020 50%, #303030 50%);
+    
+    @media (max-width: 768px) {
+        background: linear-gradient(to right, #202020 50%, #202020 50%);
+    }
 
     &__content {
         width: 100%;
@@ -13,12 +17,27 @@
         justify-content: space-around;
         align-items: center;
         padding: 32px;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            background-color: #303030;
+        }
 
         &__counter {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 50%;
+            font-weight: bold;
+            font-size: 32px;
+
+            @media (max-width: 768px) {
+                width: 75%;
+                margin-top: 16px;
+                font-weight: bold;
+                font-size: 24px;
+                border: 3px solid rgb(61, 61, 61);
+            }
         }
 
         &__text-box {
@@ -26,6 +45,11 @@
             flex-direction: column;
             width: 50%;
 
+            @media (max-width: 768px) {
+                width: 75%;
+                align-items: center;
+            }
+            
             &__title {
                 font-size: 32px;
                 margin-bottom: 8px;
@@ -41,6 +65,7 @@
                 color: #202020;
                 border: none;
                 cursor: pointer;
+
 
                 &:hover {
                     background-color: #fff;
